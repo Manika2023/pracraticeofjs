@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>game</title>
+</head>
+<body>
+     <script>
+          function check(comp,user){
+     if(comp == user){
+          return 0;
+     }
+     else if(comp==1 && user==0){
+          return 1
+     }
+     else if(comp==2 && user==0){
+          return 1;
+     }
+     else if(comp==1 && user==2){
+          return -1;
+     }
+
+     return 1;
+}
+
+
+let comp=Math.floor(Math.random()*3)
+let   user=prompt("0 for snake, 1 for water and 2 for gun:\n")
+let score=check(comp,user)
+
+console.log("you", user)
+console.log("computer",comp)
+
+if (score==0){
+   console.log("it is draw")
+}
+else if(score==-1){
+  console.log("you lose")
+}   
+else{
+    console.log("you won")    
+}
+     </script>
+</body>
+</html>

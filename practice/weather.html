@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>weather api</title>
+</head>
+<body>
+     
+
+
+
+     <script>
+
+         const main1=async()=>{ 
+          let p=fetch('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/delhi?unitGroup=metric&key=FXC6JPYY3PCDZ7CCFG6FMZTJD&contentType=json')
+p.then((response)=>{
+     return response.json()
+}).then((value)=>{
+   console.log(value)
+})
+}
+main1()
+
+     </script>
+</body>
+</html>

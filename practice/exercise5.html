@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>hackerman</title>
+</head>
+<style>
+     body{
+          background: black;
+          color: green;
+          font-size: 3rem;
+     }
+</style>
+<body>
+<div id="text"></div>
+     <script>
+          let a=[
+               "initializing hack tool",
+               "connectiong to facebook",
+               "connecting to server 1",
+               "connecting to failed,retrying",
+               "connecting to sever 2",
+               "connected successfully.......... ",
+               "username i am monika",
+               "trying brute force",
+               "200k password tries...",
+               "match found",
+               "accessing account",
+               "hack successfully"
+          ]
+
+
+     let index=0;
+     function printele(){
+          if(index<a.length){
+               // console.log(a[index])
+               text.innerHTML=text.innerHTML+ a[index]+"<br>"
+               index++
+          }else{
+               clearInterval(interval)
+          }
+
+     }
+     const interval=setInterval(() => {
+          printele()
+     }, 1000);
+
+
+//           const sleep =async (seconds)=>{
+//                return new promise((resolve,reject)=>{
+//                     setTimeout(()=>{
+//                          resolve(true)
+//                     },seconds*1000)
+//                })
+//           }
+//           const showhack=async(message)=>{
+//                sleep(2)
+//                console.log(message)
+//                text.innerHTML=text.innerHTML+message+"<br>"
+//           }
+
+//           for(let i=0;i<a.length;i++){
+//      sleep(2)
+//       console.log(a[i])
+//  }
+
+          // (async ()=>{
+          //      for(let i=0;i<a.length;i++){
+          //           await showhack(a[i])
+          //      }
+          // })()
+     </script>
+     
+</body>
+</html>

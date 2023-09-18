@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>guess the number</title>
+</head>
+<body>
+     <script>
+          // score=100-no of guess
+     //    let  num= Math.floor(Math.random());
+ let randomNum=Math.floor(Math.random()*100);
+ let numberOfGuesses=0;
+ let userScore=0;
+console.log(randomNum)
+ function playgame(){
+     const userNumber=parseInt(prompt("guess a number between 1 and 100"));
+     numberOfGuesses++;
+
+     if(userNumber===randomNum){
+          userScore=100-numberOfGuesses;
+          console.log(`congratulations! u guessed the correct number in ${numberOfGuesses} guesses`)
+          console.log(`your score is :${userScore}`)
+     }
+     else if(userNumber<randomNum){
+          console.log("try again a higher number")
+     }
+     else{
+          console.log("try a lower number")
+     }
+     playgame();
+ }
+playgame();
+
+
+     </script>
+</body>
+</html>

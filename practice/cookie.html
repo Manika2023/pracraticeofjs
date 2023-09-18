@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>cookie</title>
+</head>
+<body>
+     
+
+     <script>
+     //     console.log(document.cookie)
+     //     document.cookie="name=monika123"
+     //     document.cookie="name2=monika234"
+     //     document.cookie="name=monika"
+     //     let key=prompt("enter your key")
+     //     let value=prompt("enter your value")
+     //     document.cookie=`${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+     //     console.log(document.cookie)
+
+     // localstorage=browser  me store hota hai rather than cookie=ye har request ke sath store hota hai=key value
+
+     // let key =prompt("enter key u want to set")
+     // let value=prompt("enter your value")
+     // localStorage.setItem(key,value)
+     // console.log(`the value at ${key} is ${value}`)
+
+     // if(key=="red" || key=="blue"){
+     //      localStorage.removeItem(key)
+     // }
+
+     // if(key==0){
+     //      localStorage.clear()
+     // }
+
+     // session=exist only in current browser tab
+
+     console.log(sessionStorage.setItem('name','monika'))
+     console.log(sessionStorage.setItem('name1','monika'))
+     sessionStorage.removeItem('name')
+
+     window.onstorage=(e)=>{
+          alert("changed")
+          console.log(e)
+     }
+
+     </script>
+</body>
+</html>

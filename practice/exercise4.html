@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>clock using javascript</title>
+<style>
+     .btn{
+          height: 250px;
+          width: 200px;
+          margin-bottom: 4rem;
+          margin:3rem 20rem;
+          color: white;
+          font-size: 23px;
+          background: palevioletred;
+          border-radius: 6px;
+          border: navy;
+          box-shadow:4px  4px 6px 3px rgb(238, 237, 237);
+          transition: .2s ease-out;
+          opacity: 0.79;
+          z-index: -1;
+          
+     }
+.btn:hover{
+     transform: scale3d(5s);
+}
+     h1{
+          margin-top: 4rem;
+          margin-left: 6rem;
+     }
+     .orange{
+background: blue;
+color: white;
+     }
+     body{
+        background-image: url();
+     }
+</style>
+</head>
+<body>
+     <h1>this is a digital clock</h1>
+<button id="btn" class="btn orange">hellow</button>
+     <script>
+          let a=new Date()
+          console.log(a)
+          let h=a.getHours()
+          
+          console.log("the current hours is "+h)
+          let m=a.getMinutes()
+          console.log("the current minutes is "+m)
+          let s=a.getSeconds()
+          console.log("the current seconds is "+s)
+          let d=a.getDate()
+          console.log(typeof d)
+          console.log("the current date is "+d)
+
+          let mo=a.getMonth()
+          console.log("the current month is "+(mo+1))
+
+
+
+          setInterval(()=>{
+               // let a=new Date().toDateString()
+               // let a=new Date().toTimeString()
+               // let a=new Date().toLocaleTimeString()
+               let a=new Date()
+               let btn=document.getElementById('btn')
+               btn.innerHTML=a
+              
+          },1000)
+
+
+         setInterval(async function(){
+          let btn1=document.getElementsByClassName('btn')
+              btn.classList.toggle('orange')
+         },6000)
+
+     </script>
+</body>
+</html>

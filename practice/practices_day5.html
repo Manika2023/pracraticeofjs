@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>exercise</title>
+</head>
+<style>
+     .box{
+          height: 40px;
+          width: 200px;
+          color: white;
+          border: none;
+          border-radius: 6px;
+     }
+     #colorVariations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .colorBox {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid black;
+  }
+</style>
+<body>
+     <div id="colorVariations">
+
+     </div>
+     <!-- exercise 1 -->
+    <!-- <div class="container">
+     <button id="btn">click me</button>
+    </div> 
+
+    <script>
+     let a=document.getElementsByTagName('div')[0]
+     a.addEventListener('click',()=>{
+          console.log("hi, i am monika")
+     })
+
+     let b=document.getElementsByTagName('div')[0]
+     b.addEventListener('click',()=>{
+          console.log("monika is a good girl")
+     })
+    </script> -->
+
+ <!-- <div class="container">
+     <button id="btn" class="box">click me</button>
+    </div> 
+
+    <script>
+     let user=prompt("enter your favrite color")
+  document.getElementsByClassName('box')[0].style.background=user
+  document.getElementsByClassName('box')[0].style.background=user
+
+
+    </script>  -->
+
+    
+
+
+<!-- 
+<h1>book marks</h1>
+<a href="https://google.com"><button id="google">google</button></a>
+<a href="https://fb.com"><button>facebook</button></a>
+<a href="https://youtube.com"><button>youtube</button></a>
+
+<script>
+     document.getElementById('google').addEventListener('click',function(){
+     //      var url="https://google.com/search?q=javascript";
+
+     // var win=window.open(url,"","width=500, height=400,scrollbars=yes,resizable=yes")
+     // win.focus()
+
+     window.location="https://www.google.com";
+     win.focus();
+     })
+
+     setinterval(function(){
+          let url="https://jsonplaceholder.typicode.com/todos/1";
+          console.log(await fetchContaint(url))
+     },3000)
+</script> -->
+<style>
+     .bulb{
+          background: yellow;
+     }
+     .bulb-container{
+          height: 341px;
+          width: 341px;
+         
+     }
+
+</style>
+<!-- bulb project -->
+<div id="bulb" class="bulb-container bulb">
+
+</div>
+<script>
+setInterval(async function(){
+  let a= document.querySelector("#bulb")
+     a.classList.toggle("bulb")
+},300)
+</script>
+
+
+</body>
+</html>
